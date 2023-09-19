@@ -4,7 +4,7 @@ resource "google_storage_bucket" "storage" {
   location                    = "US"
   public_access_prevention    = "enforced"
   uniform_bucket_level_access = true
-  force_destroy               = false
+  force_destroy               = true
 }
 
 
