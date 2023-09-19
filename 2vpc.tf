@@ -1,10 +1,19 @@
 resource "google_project_service" "compute" {
+  project = "terrateam-demo" 
   service = "compute.googleapis.com"
   disable_on_destroy = true
   disable_dependent_services = true
 }
 
+resource "google_project_service" "cloudresourcemanager" { 
+  project = "terrateam-demo" 
+  service = "cloudresourcemanager.googleapis.com"
+  disable_on_destroy = true
+  disable_dependent_services = true
+}
+
 resource "google_project_service" "container" {
+  project = "terrateam-demo" 
   service = "container.googleapis.com"
   disable_on_destroy = true
   disable_dependent_services = true
