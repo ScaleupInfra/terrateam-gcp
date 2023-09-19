@@ -5,10 +5,10 @@ terraform {
       version = "4.51.0"
     }
   }
-  /* backend "gcs" {
-    bucket         = "your-unique-bucket-name"
-    prefix         = "terraform/state"
-  } */
+  backend "gcs" {
+    bucket         = "terrateam-demo-109032"
+    prefix         = "GKS/gks.tfstate"
+  }
 }
 
 provider "google" {
