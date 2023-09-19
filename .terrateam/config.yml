@@ -6,5 +6,5 @@ hooks:
     pre:
       - type: oidc
         provider: gcp
-        service_account: "terrateam@infrasity.iam.gserviceaccount.com"
-        workload_identity_provider: "WORKLOAD_IDENTITY_PROVIDER"
+        service_account: "terrateam@rosy-valor-399401.iam.gserviceaccount.com"
+        workload_identity_provider: "projects/56125405118/locations/global/workloadIdentityPools/terrateam-pool/providers/terrateam-provider"
