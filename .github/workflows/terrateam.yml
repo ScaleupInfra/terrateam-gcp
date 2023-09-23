@@ -37,8 +37,3 @@ jobs:
           api-base-url: "${{ github.event.inputs.api-base-url }}"
         env:
           SECRETS_CONTEXT: ${{ toJson(secrets) }}
-
-      - uses: Checkov Checks
-      # Run Checkov to scan the infrastructure code for vulnerabilities and misconfigurations
-      - name: Checkov
-        run: checkov -d .

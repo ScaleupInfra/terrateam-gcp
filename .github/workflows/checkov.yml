@@ -1,0 +1,17 @@
+name: Checkov Checks
+
+on:
+  pull_request:
+
+jobs:
+  preview:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Checkov
+        run: |
+          apt-get update && apt-get install -y python3-pip
+          pip3 install checkov
+          checkov -d .
