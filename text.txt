@@ -1,0 +1,14 @@
+gcloud auth list
+gcloud config list project
+gcloud config set compute/zone us-central1-a
+gcloud config set project terrateam-demo
+gcloud config get-value project
+
+connecting to cluster:
+ gcloud container clusters get-credentials primary --zone us-central1-a --project terrateam-demo
+
+kubectl apply -f mkdocs-ns.yml
+kubectl apply -f deployment.yml
+kubectl apply -f service.yml
+
+kubectl get svc -n mkdocs

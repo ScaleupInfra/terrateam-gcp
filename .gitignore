@@ -1,1 +1,4 @@
-
+**/.terrform/*
+**/.terraform*
+**/.terraform.lock.hcl
+text.txt
