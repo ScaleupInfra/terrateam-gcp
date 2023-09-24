@@ -43,4 +43,8 @@ resource "google_container_cluster" "primary" {
       cidr_block   = "0.0.0.0/0"
     }
   }
+  node_config {
+    disk_size_gb = 50
+    machine_type = "e2-medium"
+  }
 }
