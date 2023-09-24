@@ -30,3 +30,4 @@ resource "google_compute_network" "vpc_network" {
 
   depends_on = [ data.google_client_config.default, google_project_service.compute, google_project_service.container ]
 }
+#
