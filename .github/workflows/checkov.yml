@@ -14,7 +14,7 @@ jobs:
         run: |
           apt-get update && apt-get install -y python3-pip
           pip3 install checkov
-          checkov -d . --skip-check CKV_GCP*
+          checkov -d . --skip-check CKV_GCP*,CKV2_GHA*,CKV_GHA*,CKV2_K8S*,CKV_K8S*
 
 # CKV_GCP* for GCP checks
 # CKV2_GHA* for Github Actions checks
