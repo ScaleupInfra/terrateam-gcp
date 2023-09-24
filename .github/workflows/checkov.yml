@@ -21,4 +21,3 @@ jobs:
 # CKV_GHA* for Github Actions checks
 # CKV2_K8S* for Kubernetes checks
 # CKV_K8S* for Kubernetes checks
-# --skip-check CKV_GCP*,CKV2_GHA*,CKV_GHA*,CKV2_K8S*,CKV_K8S*
