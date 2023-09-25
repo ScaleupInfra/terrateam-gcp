@@ -13,7 +13,7 @@ resource "google_project_service" "cloudresourcemanager" {
 }
 
 resource "google_project_service" "container" {
-  project = "terrateam-demo"
+  project = "terrateam-demo1"
   service = "container.googleapis.com"
   disable_on_destroy = true
   disable_dependent_services = true
