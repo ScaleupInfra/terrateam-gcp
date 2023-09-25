@@ -3,9 +3,6 @@ workflows:
     plan:
       - type: init
       - type: plan
-      - type: env
-        name: CKV_SKIP_CHECK
-        cmd: ["echo", "CKV_GCP_73"]
       - type: run
         cmd: ["checkov-wrapper"]
         capture_output: true
