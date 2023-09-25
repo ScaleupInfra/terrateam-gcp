@@ -33,8 +33,8 @@ resource "google_container_cluster" "primary" {
   }
   
   private_cluster_config {
-    enable_private_nodes    = true 
-    enable_private_endpoint = true
+    enable_private_nodes    = false 
+    enable_private_endpoint = false
   }
 
   master_authorized_networks_config {
