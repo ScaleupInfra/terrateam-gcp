@@ -1,14 +1,6 @@
 ##########################################################################
 # .terrateam/config.yml
 ##########################################################################
-hooks:
-  all:
-    pre:
-      - type: oidc
-        provider: gcp
-        service_account: "terrateam@terrateam-demo.iam.gserviceaccount.com"
-        workload_identity_provider: "projects/56125405118/locations/global/workloadIdentityPools/terrateam-pool/providers/terrateam-provider"
-
 workflows:
   - tag_query: ""
     plan:
@@ -20,3 +12,11 @@ workflows:
       - type: run
         cmd: ["checkov-wrapper"]
         capture_output: true
+
+hooks:
+  all:
+    pre:
+      - type: oidc
+        provider: gcp
+        service_account: "terrateam@terrateam-demo.iam.gserviceaccount.com"
+        workload_identity_provider: "projects/56125405118/locations/global/workloadIdentityPools/terrateam-pool/providers/terrateam-provider"
